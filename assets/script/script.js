@@ -28,13 +28,15 @@ var lowerCaseEl,
 
     function generatePassword() {
         //Prompts user desire password length
+        var userPassword = "";
+        var masterPassword = "";
         var lengthEl = prompt("Choose a number between 8 and 128 for your password length");
         var length = parseInt(lengthEl);
-        if(lengthEl >= 8 && lengthEl <= 128) {
-            console.log(parseInt(length));
-        } else {
-            generatePassword();
+        if(length < 8 || length > 128 || !length) {
+           alert("Password length must be between 8 and 128 characters")
+           return
         }
+
 
         //Prompts user for lowercase letters
         var lowerCaseEl = confirm("Would you like lower-case characters?");
