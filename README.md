@@ -24,7 +24,7 @@
   * Bootstrap Framework
   
   #Link
-  https://tylerphopho.github.io/password-generator/
+  https://tylerphopho.github.io/PW-Generation/
   
   #Resources
   https://www.w3schools.com/default.asp
